@@ -2,7 +2,7 @@
 //   completed: number
 // }
 
-export function HabitDay(){
+export function HabitDay(props: any){
   return (
     <div className="w-10 h-10 bg-zinc-900 border-2 border-zinc-800 rounded-lg"></div>
   )

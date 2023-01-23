@@ -32,9 +32,9 @@ export function HabitDay({ completed, amount }: HabitDayProps){
 
           <div className="mt-6 flex flex-col gap-3">
             <Checkbox.Root
-              className="flex items-center gap-3"
+              className="flex items-center gap-3 group"
             >
-              <div className="h-8 w-8 rounded-lg flex items-center justify-center bg-zinc-900 border-2 border-zinc-800">
+              <div className="h-8 w-8 rounded-lg flex items-center justify-center bg-zinc-900 border-2 border-zinc-800 group-data-[state=checked]:bg-green-500">
                 <Checkbox.Indicator>
                   <Check size={20} className="text-white"/>
                 </Checkbox.Indicator>

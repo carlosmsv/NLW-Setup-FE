@@ -19,9 +19,9 @@ export function Header(){
 
         {/* Portal to place the modal content outside of Header, because it's supposed to be on the Body */}
         <Dialog.Portal>
-          <Dialog.Overlay />
+          <Dialog.Overlay className="w-screen h-screen bg-black/80 fixed inset-0"/>
           
-          <Dialog.Content>
+          <Dialog.Content className="absolute p-10 bg-zinc-900 rounded-2xl w-full max-w-md top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             Conteúdo do Modal
           </Dialog.Content>
         </Dialog.Portal>

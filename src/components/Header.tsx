@@ -18,7 +18,6 @@ export function Header(){
           Novo hábito
         </Dialog.Trigger>
 
-        {/* Portal to place the modal content outside of Header, because it's supposed to be on the Body */}
         <Dialog.Portal>
           <Dialog.Overlay className="w-screen h-screen bg-black/80 fixed inset-0"/>
           

@@ -6,7 +6,7 @@ interface HabitDayProps {
   amount: number
 }
 
-export function HabitDay(props: HabitDayProps){
+export function HabitDay({ completed, amount }: HabitDayProps){
   return (
     <Popover.Root>
       <Popover.Trigger className="w-10 h-10 bg-zinc-900 border-2 border-zinc-800 rounded-lg" />

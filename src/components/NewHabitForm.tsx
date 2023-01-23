@@ -2,7 +2,7 @@ import { Check } from "phosphor-react";
 
 export function NewHabitForm() {
   return (
-    <form className="w-full flex flex-cl mt-6">
+    <form className="w-full flex flex-col mt-6">
       <label htmlFor="title" className="font-semibold leading-tight">
         Qual seu comprometimento?
       </label>

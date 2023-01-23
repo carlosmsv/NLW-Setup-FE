@@ -1,5 +1,6 @@
 import { Check } from "phosphor-react";
 import * as Checkbox from "@radix-ui/react-checkbox";
+import { FormEvent } from "react";
 
 const availableWeekDays = [
   'Domingo',
@@ -12,8 +13,13 @@ const availableWeekDays = [
 ]
 
 export function NewHabitForm() {
+  function createNewHabit(event: FormEvent) {
+    event.preventDefault();
+    console.log('created')
+  }
+
   return (
-    <form className="w-full flex flex-col mt-6">
+    <form onSubmit={createNewHabit} className="w-full flex flex-col mt-6">
       <label htmlFor="title" className="font-semibold leading-tight">
         Qual seu comprometimento?
       </label>

@@ -10,7 +10,9 @@ export function HabitDay(props: any){
 
       <Popover.Portal>
         <Popover.Content className="min-w-[320px] p-6 rounded-2xl bg-zinc-900 flex flex-col">
-          Test
+          <span className="font-semibold text-zinc-400">Terça-feira</span>
+          <span className="mt-1 font-extrabold leading-tight text-3xl">17/01</span>
+
           <Popover.Arrow height={8} width={16} className="fill-zinc-900"/>
         </Popover.Content>
       </Popover.Portal>
